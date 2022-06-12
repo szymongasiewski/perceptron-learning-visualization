@@ -52,6 +52,7 @@ while True:
     print("1. Binary step")
     print("2. Sigmoid")
     print("3. Tanh")
+    print("4. Relu")
     
     activacion_function = int(input("Your choice: "))
 
@@ -77,6 +78,9 @@ while True:
 
     if activacion_function == 3:
         print("Activation function: Tanh")
+
+    if activacion_function == 4:
+        print("Activation function: Relu")
 
     y_pred = p.predict(X_test)
 

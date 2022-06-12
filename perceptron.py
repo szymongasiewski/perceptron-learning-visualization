@@ -43,6 +43,10 @@ class Perceptron:
         if self.function == 3:
             return np.tanh(x)
 
+        #relu
+        if self.function == 4:
+            return np.maximum(0, x)
+
     def predict(self, x):
         y_pred = []
 
