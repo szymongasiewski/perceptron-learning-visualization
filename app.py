@@ -35,6 +35,7 @@ while True:
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.33, random_state = 123)
 
     if decision == 2:
+        print("Binary target variable should be in first column")
         path = input("Paste path to csv file: ")
         data = pd.read_csv(path)
         X = data.iloc[:,1:].values
