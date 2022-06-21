@@ -34,7 +34,7 @@ while True:
         X, y = datasets.make_blobs(n_samples = samples, n_features = features, centers = 2, cluster_std = 1.05, random_state = 2)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.33, random_state = 123)
 
-    if decision == 2:
+    if decision >= 2:
         print("Binary target variable should be in first column")
         path = input("Paste path to csv file: ")
         data = pd.read_csv(path)
@@ -80,7 +80,7 @@ while True:
     if activacion_function == 3:
         print("Activation function: Tanh")
 
-    if activacion_function == 4:
+    if activacion_function >= 4:
         print("Activation function: Relu")
 
     y_pred = p.predict(X_test)

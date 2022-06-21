@@ -44,7 +44,7 @@ class Perceptron:
             return np.tanh(x)
 
         #relu
-        if self.function == 4:
+        if self.function >= 4:
             return np.maximum(0, x)
 
     def predict(self, x):
